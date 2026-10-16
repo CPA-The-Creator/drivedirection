@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Prabhjot Sir!</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background: #071525;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+#intro {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  background:
+    radial-gradient(circle at top, #234c69, transparent 60%),
+    linear-gradient(145deg, #071525, #102c42);
+}
+
+.planet {
+  font-size: 70px;
+  margin-bottom: 22px;
+  animation: float 3s ease-in-out infinite;
+}
+
+h1 {
+  font-size: clamp(34px, 8vw, 60px);
+  color: #f7cf79;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  color: #d8e4ed;
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 500px;
+}
+
+button {
+  margin-top: 32px;
+  border: 1px solid #f7cf79;
+  border-radius: 40px;
+  padding: 15px 27px;
+  background: #f7cf79;
+  color: #102238;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #ffe7ad;
+}
+
+#surprise {
+  display: none;
+  padding: 35px 20px 60px;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at top, #183a53, transparent 65%),
+    #071525;
+}
+
+.section {
+  max-width: 720px;
+  margin: 0 auto 28px;
+  padding: 28px 24px;
+  border: 1px solid rgba(247,207,121,0.35);
+  border-radius: 22px;
+  background: rgba(255,255,255,0.045);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+}
+
+.emoji {
+  font-size: 38px;
+  margin-bottom: 14px;
+}
+
+h2 {
+  color: #f7cf79;
+  font-size: 27px;
+  margin-bottom: 18px;
+}
+
+p {
+  color: #e0e9ef;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.gold {
+  color: #f7cf79;
+  font-weight: bold;
+}
+
+.travel {
+  font-size: 36px;
+  letter-spacing: 9px;
+  margin: 18px 0;
+}
+
+.quote {
+  font-style: italic;
+  color: #f7cf79;
+  margin-top: 18px;
+}
+
+footer {
+  padding: 15px;
+  color: #b8c8d6;
+  font-size: 13px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-13px); }
+}
+
+.confetti {
+  position: fixed;
+  top: -20px;
+  z-index: 10;
+  pointer-events: none;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section id="intro">
+  <div class="planet">🌍 ✈️</div>
+  <p class="subtitle">A little surprise for someone who's always balancing numbers...</p>
+  <h1>Prabhjot Sir!</h1>
+  <p class="subtitle">
+    Some people balance books.<br>
+    Some people explore the world.<br>
+    And some manage to do both! 😉
+  </p>
+  <button onclick="openSurprise()">
+    🎁 Open Your Birthday Surprise
+  </button>
+</section>
+
+<main id="surprise">
+
+  <div class="section">
+    <div class="emoji">🎂 ✨ 🥂</div>
+    <h1>Happy Birthday!</h1>
+    <h2>Prabhjot Sir</h2>
+    <p>
+      Wishing you a wonderful birthday filled with happiness,
+      laughter, good health and countless reasons to smile.
+      May this new year of your life bring success in every
+      direction and adventures beyond your imagination!
+    </p>
+    <div class="travel">🌍 🏔️ 🧭 ✈️</div>
+    <p class="quote">
+      "May your life be rich in experiences,
+      your memories priceless, and your happiness beyond measure."
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="emoji">💼 📊 🧮</div>
+    <h2>For the CA Who Knows His Numbers!</h2>
+    <p>
+      Sir, you can balance accounts, analyse figures and
+      handle financial complexities...
+      <br><br>
+      But here's one calculation even a CA can't complete:
+      <br>
+      <span class="gold">
+        Total Happiness + Unlimited Adventures
+        − All Worries = Your Best Year Yet!
+      </span>
+      <br><br>
+      And may your happiness always be in surplus,
+      your worries written off, and your luck never
+      require an audit! 😂
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="emoji">🧭 🌄 🛫</div>
+    <h2>Keep Exploring, Sir!</h2>
+    <p>
+      Some people collect things. Some collect achievements.
+      But the best explorers collect stories, experiences
+      and memories from places they've never been before.
+      <br><br>
+      May your passport fill with stamps, your camera
+      fill with beautiful moments, and your life keep
+      surprising you with destinations worth discovering.
+      <br><br>
+      <span class="gold">
+        More mountains. More sunsets. More road trips.
+        More unforgettable stories!
+      </span>
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="emoji">😎 ☕ 😂</div>
+    <h2>A Little Something From Your Colleague</h2>
+    <p>
+      Sir, you've only recently joined our firm,
+      but your experience, friendly nature and sense of humour
+      already make working together more enjoyable.
+      <br><br>
+      It's great to sit alongside someone who brings
+      professional experience to the table and a little
+      fun to the workday as well.
+      <br><br>
+      Here's wishing you many more years of success,
+      new experiences, great conversations and
+      plenty of reasons to laugh!
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="emoji">🌟 🎁 🎉</div>
+    <h2>Your Birthday Wish</h2>
+    <p>
+      May every new chapter bring you wisdom,
+      every journey bring you wonder, and every day
+      give you something worth remembering.
+      <br><br>
+      Keep inspiring people with your experience,
+      keep spreading smiles with your humour,
+      and never lose that explorer spirit!
+      <br><br>
+      <span class="gold">
+        Happy Birthday once again, Prabhjot Sir! 🥳
+      </span>
+    </p>
+    <p class="quote">
+      "The best is yet to come. Your next great adventure awaits!"
+    </p>
+  </div>
+
+  <footer>
+    Made with respect, good wishes & a little birthday creativity ✨
+  </footer>
+
+</main>
+
+<script>
+function openSurprise() {
+  document.getElementById("intro").classList.add("hidden");
+  document.getElementById("surprise").style.display = "block";
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  celebrate();
+}
+
+function celebrate() {
+  const symbols = ["✨", "🎉", "🎊", "⭐", "🎈"];
+
+  for (let i = 0; i < 65; i++) {
+    const piece = document.createElement("div");
+    piece.className = "confetti";
+    piece.textContent =
+      symbols[Math.floor(Math.random() * symbols.length)];
+
+    piece.style.left = Math.random() * 100 + "vw";
+    piece.style.animationDuration =
+      (2.5 + Math.random() * 3) + "s";
+    piece.style.fontSize =
+      (12 + Math.random() * 18) + "px";
+
+    document.body.appendChild(piece);
+
+    piece.addEventListener("animationend", () => piece.remove());
+  }
+}
+</script>
+
+</body>
+</html>
